@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="text-bg-light p-3 my-4">
+    <h1 class="text-center my-4">Add A New Service</h1>
+    <div class="container text-center my-4">
+        <form action="/admin/<%=id%>/addedservice" method="post">
+            <label for="service">Add Service</label>
+            <input type="text" name="service" id="service" placeholder="Add Our new Service">
+            <br>
+            <br>
+            <a href="http://localhost:8080/admin/homepage/<%= id%>">Back</a>
+            <br>
+            <br>
+            
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
